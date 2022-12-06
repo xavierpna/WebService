@@ -1,21 +1,21 @@
-const tabla = document.querySelector('#lista-usuarios tbody');
-const pasar = [];
+const table = document.querySelector('#userList tbody');
+const pass = [];
 
 
-function Cargar() {
+function upload() {
     fetch('http://www.raydelto.org/agenda.php')
-        .then(respuesta => respuesta.json()) 
-        .then(usuarios => {
+        .then(answer => answer.json()) 
+        .then(users => {
             
-            usuarios.forEach(usuario => {
+            users.forEach(users => {
                 const row = document.createElement('tr');
                 row.innerHTML += `
-                    <td>${usuario.nombre}</td>
-                    <td>${usuario.apellido}</td>
-                    <td>${usuario.telefono}</td>
+                    <td>${users.nombre}</td>
+                    <td>${users.apellido}</td>
+                    <td>${users.telefono}</td>
                     
                 `;
-                tabla.appendChild(row);
+                table.appendChild(row);
                 
                 
 
@@ -24,4 +24,4 @@ function Cargar() {
         .catch(error => console.log('Hubo un error : ' + error.message))
 }
 
-Cargar();
+upload();

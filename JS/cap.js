@@ -1,9 +1,9 @@
-function capturar(){
+function cap(){
     var name=document.getElementById('nombre').value;
     var lastname = document.getElementById('apellido').value;
-    var number = document.getElementById('numero').value;
+    var phone = document.getElementById('numero').value;
 
-    let contacto = {nombre: name, apellido: lastname, telefono: number};
+    let contacto = {nombre: name, apellido: lastname, telefono: phone};
     fetch("http://www.raydelto.org/agenda.php", 
     {
         method:'POST', 
@@ -11,7 +11,7 @@ function capturar(){
         ).then( res => res.json()).then(
         (res) => 
     {
-    alert('Datos agregados correctamente')
+    alert('Los datos se han agregado correctamente.')
     }
 );
     

@@ -1,7 +1,5 @@
-Este es mi trabajo sobre Express nodeJS - Yohary Nuñez 2021-2335
+Tarea 5 / Servicio Web - Xavier Peña Pérez 2021-2136
 
-![Captura-Funcionamiento](./png/Buscador.png)
-![Siguiente-Captura](./png/Buscador-funcionando.png)
-![Siguiente](./png/BotonLista.png)
-![Siguiente](./png/BotonAgregar.png)
-![Ultimo](./png/BotonAgregar-Funcionando.png)
+![Inicio](./png/Main.png)
+![AdicionDatos](./png/Add-funcionando.png)
+![ListaDatos](./png/Lista.png)

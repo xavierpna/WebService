@@ -10,24 +10,24 @@ app.get('/', (req, res)=>{
 });
 
 
-app.get('/agregar', (req, res)=>{
-    res.sendFile(path.join(__dirname +'/Public/agregar.html'));
+app.get('/add', (req, res)=>{
+    res.sendFile(path.join(__dirname +'/Public/add.html'));
 });
 
-app.get('/capturar.js', (req, res)=>{
-    res.sendFile(path.join(__dirname +'/Js/capturar.js'));
+app.get('/cap.js', (req, res)=>{
+    res.sendFile(path.join(__dirname +'/Js/cap.js'));
 });
 
-app.get('/Buscar.js', (req, res)=>{
-    res.sendFile(path.join(__dirname +'/Js/Buscar.js'));
+app.get('/search.js', (req, res)=>{
+    res.sendFile(path.join(__dirname +'/Js/search.js'));
 });
 
-app.get('/traer.js', (req, res)=>{
-    res.sendFile(path.join(__dirname +'/Js/traer.js'));
+app.get('/pull.js', (req, res)=>{
+    res.sendFile(path.join(__dirname +'/Js/pull.js'));
 });
 
-app.get('/listacompleta', (req, res)=>{
-    res.sendFile(path.join(__dirname +'/Public/listacompleta.html'));
+app.get('/fullList', (req, res)=>{
+    res.sendFile(path.join(__dirname +'/Public/fullList.html'));
 });
 app.get('/function.js', (req, res)=>{
     res.sendFile(path.join(__dirname +'/Js/function.js'));
@@ -35,7 +35,7 @@ app.get('/function.js', (req, res)=>{
 })
 
 app.listen(3000, ()=>{
-    console.log('funcionando xd', 3000)
+    console.log('working', 3000)
 });
 
 
